@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topsoil">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="226.5dp"
+        android:id="@+id/linearLayout1" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:layout_gravity="center"
+        android:paddingTop="40dp">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:paddingBottom="30dp">
+            <Button
+                android:text="Игра"
+                android:layout_column="1"
+                android:id="@+id/GameButton" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:paddingBottom="30dp">
+            <Button
+                android:text="Справочник"
+                android:layout_column="1"
+                android:id="@+id/HintButton" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <Button
+                android:text="Выход"
+                android:layout_column="1"
+                android:id="@+id/ExitButton"
+                android:layout_width="131.5dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

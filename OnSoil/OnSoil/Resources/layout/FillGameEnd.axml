@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/botsoiltest">
+    <TextView
+        android:text="Ошибка"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_gravity="center" />
+    <TextView
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="323.0dp"
+        android:layout_height="100dp"
+        android:id="@+id/SoilName"
+        android:layout_gravity="center"
+        android:gravity="center" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:layout_gravity="center"
+        android:paddingTop="25dp">
+        <TableRow
+            android:id="@+id/tableRow1">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/HorizontName1"
+                android:gravity="center"
+                android:paddingTop="10dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/HorizontName2"
+                android:gravity="center"
+                android:paddingTop="10dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/HorizontName3"
+                android:gravity="center"
+                android:paddingTop="10dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/HorizontName4"
+                android:gravity="center"
+                android:paddingTop="10dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/HorizontName5"
+                android:gravity="center"
+                android:paddingTop="10dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/HorizontName6"
+                android:gravity="center"
+                android:paddingTop="10dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7">
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/HorizontName7"
+                android:gravity="center"
+                android:paddingTop="10dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
