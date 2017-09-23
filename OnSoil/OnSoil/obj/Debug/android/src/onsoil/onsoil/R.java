@@ -68,6 +68,7 @@ public final class R {
         public static final int fillgameend=0x7f030001;
         public static final int gamelist=0x7f030002;
         public static final int main=0x7f030003;
+        public static final int record=0x7f030004;
     }
     public static final class string {
         public static final int ApplicationName=0x7f050001;

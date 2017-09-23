@@ -57,8 +57,7 @@ namespace OnSoil
                 record.Text = " Рекорд: " + pref.GetInt("RecordHard", 0);
                 _lvlRecord = pref.GetInt("RecordHard", 0);
                 progressBar.Visibility = ViewStates.Visible;
-                timer = new Timer();
-                timer.Interval = 500;
+                timer = new Timer {Interval = 500};
                 timer.Elapsed += ProgressBarChenging;
                 timer.Start();
             }
@@ -86,22 +85,20 @@ namespace OnSoil
                 if (!Array.Exists(_horizontsСheck, element => !element))
                 {
                     progressBar.Progress = 100;
-
                     _lvlCount++;
                     if (_lvlCount > _lvlRecord){
                        NewRecord(difficult, pref,record);
                     }
                     level.Text = " Cчет: "+_lvlCount;
-
                     _horrizontsToUse = Soil.FillArray();
                     soilName.Text = Soil.SoilAndHorizontsName[0];
-                    for (var i = 0; i < spinners.Length; i++){
-                        spinners[i].Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem,
-                _horrizontsToUse);
+                    foreach (var spiner in spinners){
+                        spiner.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem,
+                            _horrizontsToUse);
                     }
                 }
-                else
-                {
+                else{
+                    timer?.Stop();
                     FillGameEnd.ErrorTitle = "Ошибка";
                     var intent = new Intent(this, typeof(FillGameEnd));
                     StartActivity(intent);

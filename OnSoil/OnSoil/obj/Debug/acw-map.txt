@@ -14,3 +14,7 @@ OnSoil.MainActivity, OnSoil;md5a64d4c03532b7b352002f09de9faa898.MainActivity
 OnSoil.MainActivity, OnSoil, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a64d4c03532b7b352002f09de9faa898.MainActivity
 OnSoil.MainActivity;md5a64d4c03532b7b352002f09de9faa898.MainActivity
 onsoil.MainActivity;md5a64d4c03532b7b352002f09de9faa898.MainActivity
+OnSoil.Record, OnSoil;md5a64d4c03532b7b352002f09de9faa898.Record
+OnSoil.Record, OnSoil, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a64d4c03532b7b352002f09de9faa898.Record
+OnSoil.Record;md5a64d4c03532b7b352002f09de9faa898.Record
+onsoil.Record;md5a64d4c03532b7b352002f09de9faa898.Record
