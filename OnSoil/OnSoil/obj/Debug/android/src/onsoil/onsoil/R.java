@@ -26,8 +26,8 @@ public final class R {
     public static final class id {
         public static final int ConfirmButton=0x7f060017;
         public static final int CounterText=0x7f060004;
+        public static final int DifficultyCheckBox=0x7f060022;
         public static final int ExitButton=0x7f060025;
-        public static final int FillProfileButton=0x7f060021;
         public static final int GameButton=0x7f060023;
         public static final int HintButton=0x7f060024;
         public static final int HorizontName1=0x7f060019;
@@ -37,7 +37,8 @@ public final class R {
         public static final int HorizontName5=0x7f06001d;
         public static final int HorizontName6=0x7f06001e;
         public static final int HorizontName7=0x7f06001f;
-        public static final int ProfileNameButton=0x7f060022;
+        public static final int NewClassifButton=0x7f060021;
+        public static final int OldClassifButton=0x7f060020;
         public static final int SoilName=0x7f060006;
         public static final int SoilVersion=0x7f060002;
         public static final int linearLayout1=0x7f060000;
@@ -53,7 +54,6 @@ public final class R {
         public static final int spinner6=0x7f060013;
         public static final int spinner7=0x7f060015;
         public static final int tableLayout1=0x7f060007;
-        public static final int tableLayout2=0x7f060020;
         public static final int tableRow1=0x7f060008;
         public static final int tableRow2=0x7f06000a;
         public static final int tableRow3=0x7f06000c;

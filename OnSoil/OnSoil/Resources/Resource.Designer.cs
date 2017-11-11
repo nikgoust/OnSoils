@@ -103,11 +103,11 @@ namespace OnSoil
 			// aapt resource value: 0x7f060004
 			public const int CounterText = 2131099652;
 			
+			// aapt resource value: 0x7f060022
+			public const int DifficultyCheckBox = 2131099682;
+			
 			// aapt resource value: 0x7f060025
 			public const int ExitButton = 2131099685;
-			
-			// aapt resource value: 0x7f060021
-			public const int FillProfileButton = 2131099681;
 			
 			// aapt resource value: 0x7f060023
 			public const int GameButton = 2131099683;
@@ -136,8 +136,11 @@ namespace OnSoil
 			// aapt resource value: 0x7f06001f
 			public const int HorizontName7 = 2131099679;
 			
-			// aapt resource value: 0x7f060022
-			public const int ProfileNameButton = 2131099682;
+			// aapt resource value: 0x7f060021
+			public const int NewClassifButton = 2131099681;
+			
+			// aapt resource value: 0x7f060020
+			public const int OldClassifButton = 2131099680;
 			
 			// aapt resource value: 0x7f060006
 			public const int SoilName = 2131099654;
@@ -183,9 +186,6 @@ namespace OnSoil
 			
 			// aapt resource value: 0x7f060007
 			public const int tableLayout1 = 2131099655;
-			
-			// aapt resource value: 0x7f060020
-			public const int tableLayout2 = 2131099680;
 			
 			// aapt resource value: 0x7f060008
 			public const int tableRow1 = 2131099656;

@@ -15,11 +15,9 @@ namespace OnSoil
         private int _lvlCount = 0;
         private int _lvlRecord;
         private bool[] _horizontsСheck;
-        public static string difficult = "Легко";
-        public static string year = "2004";
-        private int time = 20;
-        private Timer timer;
-        private ProgressBar progressBar;
+        private const int Time = 20;
+        private Timer _timer;
+        private ProgressBar _progressBar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,10 +25,12 @@ namespace OnSoil
 
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.FillGame);
+            var difficult = Intent.GetStringExtra("Difficulty");
+            var year = Intent.GetStringExtra("Year");
             _horizontsСheck = new bool[7];
             var confirmButton = FindViewById<Button>(Resource.Id.ConfirmButton);
 
-            var spinners = new Spinner[]{
+            var spinners = new[]{
                 FindViewById<Spinner>(Resource.Id.spinner1),
                 FindViewById<Spinner>(Resource.Id.spinner2),
                 FindViewById<Spinner>(Resource.Id.spinner3),
@@ -40,8 +40,8 @@ namespace OnSoil
                 FindViewById<Spinner>(Resource.Id.spinner7)
             };
 
-            progressBar= FindViewById<ProgressBar>(Resource.Id.progressBar1);
-            progressBar.Progress = 100;
+            _progressBar= FindViewById<ProgressBar>(Resource.Id.progressBar1);
+            _progressBar.Progress = 100;
 
             Soil.Init(difficult); 
 
@@ -50,24 +50,10 @@ namespace OnSoil
             var record = FindViewById<TextView>(Resource.Id.recordText);
             var soilVersion = FindViewById<TextView>(Resource.Id.SoilVersion);
             soilVersion.Text = year;
+            var pref = Application.Context.GetSharedPreferences("record", FileCreationMode.Private);
+            InitRecordValue(record, pref,difficult);
 
-            ISharedPreferences pref = Application.Context.GetSharedPreferences("record", FileCreationMode.Private);
-            if (difficult == "Сложно")
-            {
-                record.Text = " Рекорд: " + pref.GetInt("RecordHard", 0);
-                _lvlRecord = pref.GetInt("RecordHard", 0);
-                progressBar.Visibility = ViewStates.Visible;
-                timer = new Timer {Interval = 500};
-                timer.Elapsed += ProgressBarChenging;
-                timer.Start();
-            }
-            else
-            {
-                record.Text = " Рекорд: " + pref.GetInt("Record", 0);
-                _lvlRecord = pref.GetInt("Record", 0);
-                progressBar.Visibility = ViewStates.Invisible;
-            }
-            
+
             _horrizontsToUse = Soil.FillArray();
             soilName.Text = Soil.SoilAndHorizontsName[0];
 
@@ -84,7 +70,7 @@ namespace OnSoil
             confirmButton.Click += (sender, e) =>{
                 if (!Array.Exists(_horizontsСheck, element => !element))
                 {
-                    progressBar.Progress = 100;
+                    _progressBar.Progress = 100;
                     _lvlCount++;
                     if (_lvlCount > _lvlRecord){
                        NewRecord(difficult, pref,record);
@@ -98,7 +84,7 @@ namespace OnSoil
                     }
                 }
                 else{
-                    timer?.Stop();
+                    _timer?.Stop();
                     FillGameEnd.ErrorTitle = "Ошибка";
                     var intent = new Intent(this, typeof(FillGameEnd));
                     StartActivity(intent);
@@ -107,19 +93,37 @@ namespace OnSoil
             };
         }
 
-        private void NewRecord(string difficult,ISharedPreferences pref,TextView record)
+        private void InitRecordValue(TextView record, ISharedPreferences pref, string difficult)
         {
+            
+            if (difficult == "Сложно")
+            {
+                record.Text = " Рекорд: " + pref.GetInt("RecordHard", 0);
+                _lvlRecord = pref.GetInt("RecordHard", 0);
+                _progressBar.Visibility = ViewStates.Visible;
+                _timer = new Timer { Interval = 500 };
+                _timer.Elapsed += ProgressBarChenging;
+                _timer.Start();
+            }
+            else
+            {
+                record.Text = " Рекорд: " + pref.GetInt("Record", 0);
+                _lvlRecord = pref.GetInt("Record", 0);
+                _progressBar.Visibility = ViewStates.Invisible;
+            }
+        }
+
+        private void NewRecord(string difficult,ISharedPreferences pref,TextView record){
             if (difficult == "Легко"){
                 pref = Application.Context.GetSharedPreferences("record", FileCreationMode.Private);
-                ISharedPreferencesEditor edit = pref.Edit();
+                var edit = pref.Edit();
                 edit.PutInt("Record", _lvlCount);
                 edit.Commit();
                 record.Text = " Рекорд: " + _lvlCount;
             }
-            else
-            {
+            else{
                 pref = Application.Context.GetSharedPreferences("record", FileCreationMode.Private);
-                ISharedPreferencesEditor edit = pref.Edit();
+                var edit = pref.Edit();
                 edit.PutInt("RecordHard", _lvlCount);
                 edit.Commit();
                 record.Text = " Рекорд: " + _lvlCount;
@@ -128,7 +132,7 @@ namespace OnSoil
 
         public override void OnBackPressed()
         {
-            timer?.Stop();
+            _timer?.Stop();
             var intent = new Intent(this, typeof(GameList));
             StartActivity(intent);
             OverridePendingTransition(Resource.Animation.slide_in_topBACK, Resource.Animation.slide_out_bottomBACK);
@@ -137,11 +141,11 @@ namespace OnSoil
         private void ProgressBarChenging(object sender, ElapsedEventArgs e)
         {
             RunOnUiThread(() => { 
-            progressBar.IncrementProgressBy(-(100 / time) / 2);
+            _progressBar.IncrementProgressBy(-(100 / Time) / 2);
         });
-            if (progressBar.Progress <= 1)
+            if (_progressBar.Progress <= 1)
             {
-                timer.Stop();
+                _timer.Stop();
                 FillGameEnd.ErrorTitle = "Время вышло";
                     var intentEnd = new Intent(this, typeof(FillGameEnd));
                     StartActivity(intentEnd);

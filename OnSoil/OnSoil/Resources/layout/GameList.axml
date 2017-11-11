@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="@drawable/botsoil">
-    <TableLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tableLayout2"
-        android:layout_gravity="center"
-        android:paddingTop="200dp"
-        android:paddingLeft="15dp">
-        <TableRow
-            android:id="@+id/tableRow4">
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow5">
-            <Spinner
-                android:layout_column="1"
-                android:id="@+id/spinner1" />
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow6">
-            <Spinner
-                android:layout_column="1"
-                android:id="@+id/spinner2" />
-        </TableRow>
-    </TableLayout>
     <TableLayout
         android:minWidth="25px"
         android:minHeight="25px"
@@ -42,20 +19,30 @@
         <TableRow
             android:id="@+id/tableRow1">
             <Button
-                android:text="Составление профиля"
+                android:text="1977 год"
                 android:layout_column="1"
-                android:id="@+id/FillProfileButton" />
+                android:id="@+id/OldClassifButton"
+                android:layout_gravity="center" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow2"
-            android:paddingTop="50dp">
+            android:paddingTop="35dp">
             <Button
-                android:text="Название профиля"
+                android:text="2004 год"
                 android:layout_column="1"
-                android:id="@+id/ProfileNameButton" />
+                android:id="@+id/NewClassifButton"
+                android:layout_gravity="center"
+                android:layout_width="66.0dp" />
         </TableRow>
         <TableRow
-            android:id="@+id/tableRow3">
+            android:id="@+id/tableRow3"
+            android:paddingTop="35dp">
+            <CheckBox
+                android:text="  Сложный режим"
+                android:layout_column="1"
+                android:id="@+id/DifficultyCheckBox"
+                android:layout_gravity="center"
+                android:shadowColor="#ff000000" />
         </TableRow>
     </TableLayout>
 </LinearLayout>
