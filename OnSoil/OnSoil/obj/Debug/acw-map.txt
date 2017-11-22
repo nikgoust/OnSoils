@@ -1,3 +1,7 @@
+OnSoil.Directory, OnSoil;md5a64d4c03532b7b352002f09de9faa898.Directory
+OnSoil.Directory, OnSoil, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a64d4c03532b7b352002f09de9faa898.Directory
+OnSoil.Directory;md5a64d4c03532b7b352002f09de9faa898.Directory
+onsoil.Directory;md5a64d4c03532b7b352002f09de9faa898.Directory
 OnSoil.FillGame, OnSoil;md5a64d4c03532b7b352002f09de9faa898.FillGame
 OnSoil.FillGame, OnSoil, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a64d4c03532b7b352002f09de9faa898.FillGame
 OnSoil.FillGame;md5a64d4c03532b7b352002f09de9faa898.FillGame
@@ -18,3 +22,7 @@ OnSoil.Record, OnSoil;md5a64d4c03532b7b352002f09de9faa898.Record
 OnSoil.Record, OnSoil, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a64d4c03532b7b352002f09de9faa898.Record
 OnSoil.Record;md5a64d4c03532b7b352002f09de9faa898.Record
 onsoil.Record;md5a64d4c03532b7b352002f09de9faa898.Record
+OnSoil.SoilsInfo, OnSoil;md5a64d4c03532b7b352002f09de9faa898.SoilsInfo
+OnSoil.SoilsInfo, OnSoil, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a64d4c03532b7b352002f09de9faa898.SoilsInfo
+OnSoil.SoilsInfo;md5a64d4c03532b7b352002f09de9faa898.SoilsInfo
+onsoil.SoilsInfo;md5a64d4c03532b7b352002f09de9faa898.SoilsInfo

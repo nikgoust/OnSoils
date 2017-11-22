@@ -55,7 +55,6 @@ F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.dll
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.pdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.OnSoil.apk
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.OnSoil-Signed.apk
-F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\OnSoil.csprojResolveAssemblyReference.cache
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\OnSoil.dll
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\OnSoil.pdb
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\bin\OnSoil.OnSoil.apk
@@ -76,12 +75,14 @@ F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\anim\slide_out_bottomback.xml
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\drawable\botsoiltest.png
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\R.cs.flag
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\uploadflags.txt
+F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\directory.xml
+F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\soilsinfo.xml
+F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\Java.Interop.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\Microsoft.CSharp.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\Mono.Android.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\Mono.CSharp.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\mscorlib.dll.mdb
-F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\System.ComponentModel.Composition.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\System.Core.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\System.dll.mdb
@@ -104,5 +105,6 @@ F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\assets\System.Runtime.Serializati
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\assets\System.Xml.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\OnSoil.csprojResolveAssemblyReference.cache
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\OnSoil.dll.mdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.dll.mdb

@@ -1,11 +1,12 @@
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Widget;
 
 namespace OnSoil
 {
-    [Activity(Label = "FillGameEnd")]
+    [Activity(Label = "FillGameEnd", ScreenOrientation = ScreenOrientation.Portrait)]
     public class FillGameEnd : Activity
     {
         public static string ErrorTitle;
@@ -36,9 +37,11 @@ namespace OnSoil
             var soilName = FindViewById<TextView>(Resource.Id.SoilName);
 
             title.Text = ErrorTitle;
-            soilName.Text = Soil.SoilAndHorizontsName[0];
-            for (var i=0;i<horizonts.Length;i++){
-                horizonts[i].Text= Soil.SoilAndHorizontsName[i+1];
+            soilName.Text = Soil.CurrentSoil.Name;
+            var i = 0;
+            foreach (var horizon in Soil.CurrentSoil.Items){
+                horizonts[i].Text = horizon;
+                i++;
             }
         }
     }

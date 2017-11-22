@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>11.11.2017 19:41:13</xs:documentation>
+    <xs:documentation>22.11.2017 18:35:07</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -17143,10 +17143,12 @@
             <xs:enumeration value="@+id/checkedTextView1" />
             <xs:enumeration value="@id/ConfirmButton" />
             <xs:enumeration value="@id/CounterText" />
-            <xs:enumeration value="@id/DifficultyCheckBox" />
+            <xs:enumeration value="@id/EasyGameButton" />
             <xs:enumeration value="@id/ExitButton" />
             <xs:enumeration value="@id/GameButton" />
+            <xs:enumeration value="@id/HardGameButton" />
             <xs:enumeration value="@id/HintButton" />
+            <xs:enumeration value="@id/HorizonsButton" />
             <xs:enumeration value="@id/HorizontName1" />
             <xs:enumeration value="@id/HorizontName2" />
             <xs:enumeration value="@id/HorizontName3" />
@@ -17157,8 +17159,8 @@
             <xs:enumeration value="@id/linearLayout1" />
             <xs:enumeration value="@id/linearLayout2" />
             <xs:enumeration value="@id/linearLayout3" />
-            <xs:enumeration value="@id/NewClassifButton" />
-            <xs:enumeration value="@id/OldClassifButton" />
+            <xs:enumeration value="@id/ListView" />
+            <xs:enumeration value="@id/ProfilesButton" />
             <xs:enumeration value="@id/progressBar1" />
             <xs:enumeration value="@id/recordText" />
             <xs:enumeration value="@id/SoilName" />
@@ -17178,6 +17180,7 @@
             <xs:enumeration value="@id/tableRow5" />
             <xs:enumeration value="@id/tableRow6" />
             <xs:enumeration value="@id/tableRow7" />
+            <xs:enumeration value="@id/TextView" />
             <xs:enumeration value="@id/textView1" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />

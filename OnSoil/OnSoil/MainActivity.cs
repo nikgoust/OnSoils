@@ -1,8 +1,10 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.Content.PM;
-using Android.Widget;
 using Android.OS;
+using Android.Widget;
+
+
 
 namespace OnSoil
 {
@@ -13,16 +15,26 @@ namespace OnSoil
             Exit();
         }
 
+        
+
         protected override void OnCreate(Bundle bundle){
             SetTheme(Android.Resource.Style.ThemeBlackNoTitleBarFullScreen);
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
+            DataStorage.Init();
             var gameButton = FindViewById<Button>(Resource.Id.GameButton);
             var hintButton = FindViewById<Button>(Resource.Id.HintButton);
             var exitButton = FindViewById<Button>(Resource.Id.ExitButton);
-
+           
             gameButton.Click += (sender, e) =>{
                 var intent = new Intent(this, typeof(GameList));
+                StartActivity(intent);
+                OverridePendingTransition(Resource.Animation.slide_in_top, Resource.Animation.slide_out);
+
+            };
+
+            hintButton.Click += (sender, e) => {
+                var intent = new Intent(this, typeof(Directory));
                 StartActivity(intent);
                 OverridePendingTransition(Resource.Animation.slide_in_top, Resource.Animation.slide_out);
 

@@ -30,7 +30,6 @@
         <TableRow
             android:id="@+id/tableRow1">
             <TextView
-                android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_column="1"
                 android:id="@+id/HorizontName1"
@@ -40,7 +39,6 @@
         <TableRow
             android:id="@+id/tableRow2">
             <TextView
-                android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_column="1"
                 android:id="@+id/HorizontName2"
@@ -50,7 +48,6 @@
         <TableRow
             android:id="@+id/tableRow3">
             <TextView
-                android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_column="1"
                 android:id="@+id/HorizontName3"
@@ -60,7 +57,6 @@
         <TableRow
             android:id="@+id/tableRow4">
             <TextView
-                android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_column="1"
                 android:id="@+id/HorizontName4"
@@ -70,7 +66,6 @@
         <TableRow
             android:id="@+id/tableRow5">
             <TextView
-                android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_column="1"
                 android:id="@+id/HorizontName5"
@@ -80,7 +75,6 @@
         <TableRow
             android:id="@+id/tableRow6">
             <TextView
-                android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_column="1"
                 android:id="@+id/HorizontName6"
@@ -90,7 +84,6 @@
         <TableRow
             android:id="@+id/tableRow7">
             <TextView
-                android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_column="1"
                 android:id="@+id/HorizontName7"

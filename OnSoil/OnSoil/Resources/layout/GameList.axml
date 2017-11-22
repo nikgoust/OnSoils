@@ -19,30 +19,25 @@
         <TableRow
             android:id="@+id/tableRow1">
             <Button
-                android:text="1977 год"
-                android:layout_column="1"
-                android:id="@+id/OldClassifButton"
-                android:layout_gravity="center" />
+                android:text="Легкий режим"
+                android:id="@+id/EasyGameButton"
+                android:layout_gravity="center"
+                android:layout_width="19.5dp" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow2"
-            android:paddingTop="35dp">
+            android:paddingTop="35dp"
+            android:minWidth="25px"
+            android:minHeight="25px">
             <Button
-                android:text="2004 год"
-                android:layout_column="1"
-                android:id="@+id/NewClassifButton"
+                android:text="Сложный режим"
+                android:id="@+id/HardGameButton"
                 android:layout_gravity="center"
-                android:layout_width="66.0dp" />
+                android:layout_width="149.5dp" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow3"
             android:paddingTop="35dp">
-            <CheckBox
-                android:text="  Сложный режим"
-                android:layout_column="1"
-                android:id="@+id/DifficultyCheckBox"
-                android:layout_gravity="center"
-                android:shadowColor="#ff000000" />
         </TableRow>
     </TableLayout>
 </LinearLayout>
