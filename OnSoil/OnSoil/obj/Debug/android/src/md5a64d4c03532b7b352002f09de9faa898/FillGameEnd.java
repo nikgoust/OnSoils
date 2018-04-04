@@ -17,7 +17,7 @@ public class FillGameEnd
 	}
 
 
-	public FillGameEnd () throws java.lang.Throwable
+	public FillGameEnd ()
 	{
 		super ();
 		if (getClass () == FillGameEnd.class)

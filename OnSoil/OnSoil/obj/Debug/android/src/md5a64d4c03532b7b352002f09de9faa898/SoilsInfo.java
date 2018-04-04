@@ -17,7 +17,7 @@ public class SoilsInfo
 	}
 
 
-	public SoilsInfo () throws java.lang.Throwable
+	public SoilsInfo ()
 	{
 		super ();
 		if (getClass () == SoilsInfo.class)

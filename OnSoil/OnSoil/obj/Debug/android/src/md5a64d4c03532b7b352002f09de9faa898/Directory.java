@@ -17,7 +17,7 @@ public class Directory
 	}
 
 
-	public Directory () throws java.lang.Throwable
+	public Directory ()
 	{
 		super ();
 		if (getClass () == Directory.class)

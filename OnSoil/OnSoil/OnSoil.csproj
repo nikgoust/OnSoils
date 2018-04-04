@@ -53,17 +53,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataStorage.cs" />
-    <Compile Include="Directory.cs" />
-    <Compile Include="FillGame.cs" />
-    <Compile Include="FillGameEnd.cs" />
-    <Compile Include="GameList.cs" />
-    <Compile Include="MainActivity.cs" />
-    <Compile Include="Record.cs" />
+    <Compile Include="Code\resources\MultiSpinner.cs" />
+    <Compile Include="Code\resources\SoilsBuilder.cs" />
+    <Compile Include="CustomAdapter.cs" />
+    <Compile Include="Code\diary\Dairy.cs" />
+    <Compile Include="Code\resources\DataStorage.cs" />
+    <Compile Include="Code\catalog\Directory.cs" />
+    <Compile Include="Code\game\FillGame.cs" />
+    <Compile Include="Code\game\FillGameEnd.cs" />
+    <Compile Include="Code\diary\FillingHoriz.cs" />
+    <Compile Include="Code\diary\FillingInfo.cs" />
+    <Compile Include="Code\game\GameList.cs" />
+    <Compile Include="Code\MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Soil.cs" />
-    <Compile Include="SoilsInfo.cs" />
+    <Compile Include="Code\game\GameSoil.cs" />
+    <Compile Include="Code\resources\Soil.cs" />
+    <Compile Include="Code\diary\SoilsInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\agroSoils.csv" />
@@ -91,6 +97,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidAsset Include="Assets\horizons.csv" />
+    <AndroidResource Include="Resources\layout\Dairy.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FillingInfo.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FillingHoriz.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -129,6 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\botSoilTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\simple_spinner_item.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

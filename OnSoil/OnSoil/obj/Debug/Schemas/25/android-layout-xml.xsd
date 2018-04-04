@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>22.11.2017 18:35:07</xs:documentation>
+    <xs:documentation>02.04.2018 19:21:05</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,6 +82,8 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
+      <xs:element ref="OnSoil.Code.resources.MultiSpinner" />
+      <xs:element ref="include" />
     </xs:choice>
   </xs:group>
   <xs:element name="CheckedTextView" type="CheckedTextView">
@@ -198,7 +200,7 @@
   </xs:complexType>
   <xs:element name="View" type="View">
     <xs:annotation>
-      <xs:documentation>Attributes that can be used with android.view.View or any of its subclasses. Also see .ViewGroup_Layout for attributes that are processed by the view's parent.</xs:documentation>
+      <xs:documentation>Runtime Type: android.view.View</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="View">
@@ -418,7 +420,7 @@
   </xs:complexType>
   <xs:element name="ViewGroup" type="ViewGroup">
     <xs:annotation>
-      <xs:documentation>Attributes that can be used with a android.view.ViewGroup or any of its subclasses. Also see .ViewGroup_Layout for attributes that this class processes in its children.</xs:documentation>
+      <xs:documentation>Runtime Type: android.view.ViewGroup</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="ViewGroup">
@@ -672,7 +674,7 @@
   </xs:complexType>
   <xs:element name="ViewStub" type="ViewStub">
     <xs:annotation>
-      <xs:documentation>A android.view.ViewStub lets you lazily include other XML layouts inside your application at runtime.</xs:documentation>
+      <xs:documentation>Runtime Type: android.view.ViewStub</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="ViewStub">
@@ -913,7 +915,7 @@
   </xs:complexType>
   <xs:element name="android.gesture.GestureOverlayView" type="android.gesture.GestureOverlayView">
     <xs:annotation>
-      <xs:documentation>GestureOverlayView specific attributes. These attributes are used to configure a GestureOverlayView from XML.</xs:documentation>
+      <xs:documentation>Runtime Type: android.gesture.GestureOverlayView</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="android.gesture.GestureOverlayView">
@@ -1099,7 +1101,7 @@
   </xs:complexType>
   <xs:element name="SlidingDrawer" type="SlidingDrawer">
     <xs:annotation>
-      <xs:documentation>SlidingDrawer specific attributes. These attributes are used to configure a SlidingDrawer from XML.</xs:documentation>
+      <xs:documentation>Runtime Type: android.widget.SlidingDrawer</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="SlidingDrawer">
@@ -1371,7 +1373,7 @@
   </xs:complexType>
   <xs:element name="fragment" type="fragment">
     <xs:annotation>
-      <xs:documentation>Attributes that can be used with &lt;fragment&gt; tags inside of the layout of an Activity. This instantiates the given android.app.Fragment and inserts its content view into the current location in the layout.</xs:documentation>
+      <xs:documentation>Runtime Type: android.app.Fragment</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="fragment">
@@ -1399,5 +1401,28 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="OnSoil.Code.resources.MultiSpinner" type="OnSoil.Code.resources.MultiSpinner">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: OnSoil.Code.resources.MultiSpinner</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="OnSoil.Code.resources.MultiSpinner">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Spinner" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="include" type="include">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: include</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="include">
+    <xs:attribute ref="android:id" />
+    <xs:attribute ref="android:visibility" />
+    <xs:attribute ref="android:layout_width" />
+    <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:style" />
+    <xs:attribute ref="android:layout" />
   </xs:complexType>
 </xs:schema>

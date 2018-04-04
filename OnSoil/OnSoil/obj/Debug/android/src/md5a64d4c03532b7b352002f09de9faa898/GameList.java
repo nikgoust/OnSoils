@@ -17,7 +17,7 @@ public class GameList
 	}
 
 
-	public GameList () throws java.lang.Throwable
+	public GameList ()
 	{
 		super ();
 		if (getClass () == GameList.class)

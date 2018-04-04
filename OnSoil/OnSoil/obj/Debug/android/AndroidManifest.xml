@@ -5,9 +5,12 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="OnSoil" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="Dairy" android:name="md5a64d4c03532b7b352002f09de9faa898.Dairy" />
     <activity android:label="Directory" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.Directory" />
     <activity android:label="FillGame" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.FillGame" />
     <activity android:label="FillGameEnd" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.FillGameEnd" />
+    <activity android:label="FillingHoriz" android:name="md5a64d4c03532b7b352002f09de9faa898.FillingHoriz" />
+    <activity android:label="FillingInfo" android:name="md5a64d4c03532b7b352002f09de9faa898.FillingInfo" />
     <activity android:label="GameList" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.GameList" />
     <activity android:icon="@drawable/icon" android:label="OnSoil" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.MainActivity">
       <intent-filter>
@@ -15,7 +18,6 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Record" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.Record" />
     <activity android:label="SoilsInfo" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.SoilsInfo" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="OnSoil.OnSoil.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

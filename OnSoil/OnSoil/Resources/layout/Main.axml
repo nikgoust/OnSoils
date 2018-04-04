@@ -36,7 +36,15 @@
                 android:id="@+id/HintButton" />
         </TableRow>
         <TableRow
-            android:id="@+id/tableRow3">
+            android:id="@+id/tableRow3"
+            android:paddingBottom="30dp">
+            <Button
+                android:text="Полевой дневник"
+                android:layout_column="1"
+                android:id="@+id/DiaryButton" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4">
             <Button
                 android:text="Выход"
                 android:layout_column="1"
