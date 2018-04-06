@@ -101,7 +101,7 @@ public final class R {
         public static final int linearLayout2=0x7f060009;
         public static final int linearLayout3=0x7f06001a;
         public static final int linearLayoutFor=0x7f06007e;
-        public static final int listView1=0x7f060000;
+        public static final int listViewWithSoils=0x7f060000;
         public static final int profAddHorButton=0x7f06007b;
         public static final int profButtonsLinearLayout=0x7f06007a;
         public static final int profCommentaryEditText=0x7f060076;
@@ -165,7 +165,7 @@ public final class R {
         public static final int tv_item=0x7f060088;
     }
     public static final class layout {
-        public static final int dairy=0x7f030000;
+        public static final int diary=0x7f030000;
         public static final int directory=0x7f030001;
         public static final int fillgame=0x7f030002;
         public static final int fillgameend=0x7f030003;

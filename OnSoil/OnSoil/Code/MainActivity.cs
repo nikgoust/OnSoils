@@ -35,7 +35,7 @@ namespace OnSoil
             };
 
             diaryButton.Click += (sender, e) => {
-                var intent = new Intent(this, typeof(FillingInfo));
+                var intent = new Intent(this, typeof(Diary));
                 StartActivity(intent);
                 OverridePendingTransition(Resource.Animation.slide_in_top, Resource.Animation.slide_out);
 

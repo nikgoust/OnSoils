@@ -165,7 +165,7 @@ public final class R {
         public static final int tv_item=0x7f060088;
     }
     public static final class layout {
-        public static final int dairy=0x7f030000;
+        public static final int diary=0x7f030000;
         public static final int directory=0x7f030001;
         public static final int fillgame=0x7f030002;
         public static final int fillgameend=0x7f030003;

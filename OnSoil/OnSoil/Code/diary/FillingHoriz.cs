@@ -63,7 +63,8 @@ namespace OnSoil
                     Pore = FindViewById<Spinner>(Resource.Id.horPoreSpinner).SelectedItem?.ToString() ?? "",
                     Stretching = FindViewById<TextView>(Resource.Id.horStretchingEditText).Text,
                     Structure = FindViewById<Spinner>(Resource.Id.horStructSpinner).SelectedItem?.ToString() ?? "",
-                    Сomposition = FindViewById<Spinner>(Resource.Id.horCompositionSpinner).SelectedItem?.ToString() ?? ""
+                    Сomposition = FindViewById<Spinner>(Resource.Id.horCompositionSpinner).SelectedItem?.ToString() ?? "",
+                    Acid = FindViewById<Spinner>(Resource.Id.horAcidSpinner).SelectedItem?.ToString() ?? ""
                 };
             }
         }
@@ -132,7 +133,7 @@ namespace OnSoil
                 spinner.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items);
                 //вскипание от кислоты
                 items = new[] { "", "вскипание отсутствует ", "слабое вскипание", "среднее вскипание", "сильное вскипание"};
-                spinner = FindViewById<Spinner>(Resource.Id.horPoreSpinner);
+                spinner = FindViewById<Spinner>(Resource.Id.horAcidSpinner);
                 spinner.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items);
             }
             items = new[] {"", "сухой", "свежий", "влажноватый", "влажный",

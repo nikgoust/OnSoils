@@ -40,6 +40,7 @@ namespace OnSoil
 
     class OrganicHorizon: Horizon{
         public string OrgType;
+
         public override bool Equal(Horizon horizon){
             if (horizon is MineralHorizon) return false;
             var hor = (OrganicHorizon) horizon;
@@ -57,10 +58,12 @@ namespace OnSoil
         public string Kutans;
         public string Stretching;
         public string BioNeoplasms;
+        public string Acid;
+
         public override bool Equal(Horizon horizon){
             if (horizon is OrganicHorizon) return false;
             var hor = (MineralHorizon)horizon;
-            return hor.Commentary == Commentary && hor.Color == Color
+            return hor.Commentary == Commentary && hor.Color == Color && hor.Acid == Acid
                                                 && hor.Name == Name && hor.Wetness == Wetness
                                                 && hor.BioNeoplasms == BioNeoplasms
                                                 && hor.Density == Density && hor.Kutans == Kutans

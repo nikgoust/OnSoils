@@ -56,7 +56,7 @@
     <Compile Include="Code\resources\MultiSpinner.cs" />
     <Compile Include="Code\resources\SoilsBuilder.cs" />
     <Compile Include="CustomAdapter.cs" />
-    <Compile Include="Code\diary\Dairy.cs" />
+    <Compile Include="Code\diary\Diary.cs" />
     <Compile Include="Code\resources\DataStorage.cs" />
     <Compile Include="Code\catalog\Directory.cs" />
     <Compile Include="Code\game\FillGame.cs" />
@@ -97,7 +97,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidAsset Include="Assets\horizons.csv" />
-    <AndroidResource Include="Resources\layout\Dairy.axml">
+    <AndroidResource Include="Resources\layout\Diary.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\FillingInfo.axml">

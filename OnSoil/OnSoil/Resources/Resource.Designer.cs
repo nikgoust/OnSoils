@@ -329,7 +329,7 @@ namespace OnSoil
 			public const int linearLayoutFor = 2131099774;
 			
 			// aapt resource value: 0x7f060000
-			public const int listView1 = 2131099648;
+			public const int listViewWithSoils = 2131099648;
 			
 			// aapt resource value: 0x7f06007b
 			public const int profAddHorButton = 2131099771;
@@ -528,7 +528,7 @@ namespace OnSoil
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Dairy = 2130903040;
+			public const int Diary = 2130903040;
 			
 			// aapt resource value: 0x7f030001
 			public const int Directory = 2130903041;
