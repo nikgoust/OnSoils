@@ -3,7 +3,7 @@ using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Widget;
-
+using OnSoil.Code;
 
 
 namespace OnSoil
@@ -26,7 +26,8 @@ namespace OnSoil
             var diaryButton = FindViewById<Button>(Resource.Id.DiaryButton);
             var hintButton = FindViewById<Button>(Resource.Id.HintButton);
             var exitButton = FindViewById<Button>(Resource.Id.ExitButton);
-           
+            var garden = FindViewById<Button>(Resource.Id.myGarden);
+
             gameButton.Click += (sender, e) =>{
                 var intent = new Intent(this, typeof(GameList));
                 StartActivity(intent);
@@ -46,6 +47,12 @@ namespace OnSoil
                 StartActivity(intent);
                 OverridePendingTransition(Resource.Animation.slide_in_top, Resource.Animation.slide_out);
 
+            };
+
+            garden.Click += (sender, e) => {
+                var intent = new Intent(this, typeof(Garden));
+                StartActivity(intent);
+                OverridePendingTransition(Resource.Animation.slide_in_top, Resource.Animation.slide_out);
             };
 
             exitButton.Click += (sender, e) =>{

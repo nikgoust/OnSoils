@@ -53,9 +53,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Garden.cs" />
     <Compile Include="Code\resources\MultiSpinner.cs" />
+    <Compile Include="Code\resources\MyListAdapter.cs" />
     <Compile Include="Code\resources\SoilsBuilder.cs" />
-    <Compile Include="CustomAdapter.cs" />
     <Compile Include="Code\diary\Diary.cs" />
     <Compile Include="Code\resources\DataStorage.cs" />
     <Compile Include="Code\catalog\Directory.cs" />
@@ -106,6 +107,9 @@
     <AndroidResource Include="Resources\layout\FillingHoriz.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\Garden.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -146,7 +150,12 @@
     <AndroidResource Include="Resources\drawable\botSoilTest.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\simple_spinner_item.xml" />
+    <AndroidResource Include="Resources\layout\MyListItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Garden.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

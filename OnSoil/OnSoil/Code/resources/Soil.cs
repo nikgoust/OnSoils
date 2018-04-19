@@ -12,6 +12,7 @@ using Android.Widget;
 
 namespace OnSoil
 {
+    [Serializable]
     public class Soil{
         public List<Horizon> Horizons;
         public DateTime Date;
@@ -33,42 +34,31 @@ namespace OnSoil
         public string Color;
         public string Wetness;
         public string Commentary;
-        public virtual bool Equal(Horizon horizon){
-            return false;
-        }
+        public Guid Id;
+
+        public MineralHorizon MineralHorizon => (MineralHorizon) this;
+        public OrganicHorizon OrganicHorizon => (OrganicHorizon) this;
+
     }
 
-    class OrganicHorizon: Horizon{
+    public class OrganicHorizon: Horizon{
         public string OrgType;
-
-        public override bool Equal(Horizon horizon){
-            if (horizon is MineralHorizon) return false;
-            var hor = (OrganicHorizon) horizon;
-            return hor.Commentary == Commentary && hor.Color == Color
-                      && hor.Name == Name && hor.OrgType == OrgType
-                      && hor.Wetness == Wetness;
+        public OrganicHorizon(){
+            Id = Guid.NewGuid();
         }
     }
 
-    class MineralHorizon : Horizon{
+    public class MineralHorizon : Horizon{
         public string Structure;
-        public string Сomposition;
+        public string Composition;
         public string Density;
         public string Pore;
         public string Kutans;
         public string Stretching;
         public string BioNeoplasms;
         public string Acid;
-
-        public override bool Equal(Horizon horizon){
-            if (horizon is OrganicHorizon) return false;
-            var hor = (MineralHorizon)horizon;
-            return hor.Commentary == Commentary && hor.Color == Color && hor.Acid == Acid
-                                                && hor.Name == Name && hor.Wetness == Wetness
-                                                && hor.BioNeoplasms == BioNeoplasms
-                                                && hor.Density == Density && hor.Kutans == Kutans
-                                                && hor.Pore == Pore && hor.Stretching == Stretching
-                                                && hor.Structure == Structure && hor.Сomposition == Сomposition;
+        public MineralHorizon(){
+            Id = Guid.NewGuid();
         }
     }
 }

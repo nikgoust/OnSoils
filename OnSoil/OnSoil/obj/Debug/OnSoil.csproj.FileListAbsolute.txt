@@ -80,7 +80,6 @@ F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\soilsinfo.xml
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\OnSoil.csproj.CoreCompileInputs.cache
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\fillinginfo.xml
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\fillinghoriz.xml
-F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\simple_spinner_item.xml
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\Microsoft.CSharp.pdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\Mono.Android.pdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\mscorlib.pdb
@@ -122,3 +121,7 @@ F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\assets\System.Xml.Linq.pdb
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\assets\System.Xml.pdb
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\OnSoil.csprojResolveAssemblyReference.cache
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\diary.xml
+F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\mylistitem.xml
+F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\res\layout\garden.xml
+F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.dll
+F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\linksrc\OnSoil.dll.mdb

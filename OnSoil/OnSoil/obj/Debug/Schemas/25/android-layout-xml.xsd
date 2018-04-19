@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>06.04.2018 20:51:50</xs:documentation>
+    <xs:documentation>19.04.2018 9:51:32</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,7 +82,6 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
-      <xs:element ref="OnSoil.Code.resources.MultiSpinner" />
       <xs:element ref="include" />
     </xs:choice>
   </xs:group>
@@ -1401,16 +1400,6 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
-  </xs:complexType>
-  <xs:element name="OnSoil.Code.resources.MultiSpinner" type="OnSoil.Code.resources.MultiSpinner">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: OnSoil.Code.resources.MultiSpinner</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="OnSoil.Code.resources.MultiSpinner">
-    <xs:complexContent mixed="false">
-      <xs:extension base="Spinner" />
-    </xs:complexContent>
   </xs:complexType>
   <xs:element name="include" type="include">
     <xs:annotation>

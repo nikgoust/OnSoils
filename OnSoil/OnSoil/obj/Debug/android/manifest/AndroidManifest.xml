@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="OnSoil.OnSoil" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="OnSoil.OnSoil" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="16" />
-  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="OnSoil" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="Diary" android:name="md5a64d4c03532b7b352002f09de9faa898.Diary" />
     <activity android:label="Directory" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.Directory" />
@@ -19,6 +20,7 @@
       </intent-filter>
     </activity>
     <activity android:label="SoilsInfo" android:screenOrientation="portrait" android:name="md5a64d4c03532b7b352002f09de9faa898.SoilsInfo" />
+    <activity android:label="Garden" android:name="md59093427614cae6b741e2a07e9f99acc5.Garden" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="OnSoil.OnSoil.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
