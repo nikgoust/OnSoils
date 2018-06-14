@@ -71,3 +71,5 @@ F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\assets\System.Xml.pdb
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.OnSoils.apk
 F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.OnSoils-Signed.apk
 F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\android\bin\OnSoil.OnSoils.apk
+F:\Git\OnSoils\OnSoil\OnSoil\bin\Debug\OnSoil.dll
+F:\Git\OnSoils\OnSoil\OnSoil\obj\Debug\linksrc\OnSoil.dll.mdb

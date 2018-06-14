@@ -192,11 +192,15 @@ namespace OnSoil
                 items = new[] { "", "округлые", "трубковидные", "щелевидные", "клиновидные", "камерные", "неправильные" };
                 spinner = FindViewById<Spinner>(Resource.Id.horPoreSpinner);
                 spinner.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items);
-                //поры
+                //био
                 items = new[] { "", "черноточины", "капролиты", "щелевидные", "кротовины", "корневины", "дендриты" };
                 spinner = FindViewById<Spinner>(Resource.Id.horBioNeoplasmsSpinner);
                 spinner.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items);
-                //вскипание от кислоты
+                //Почвенная структура
+                items = new[] { "", "черноточины", "капролиты", "щелевидные", "кротовины", "корневины", "дендриты" };
+                spinner = FindViewById<Spinner>(Resource.Id.horStructSpinner);
+                spinner.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items);
+                //вскипание от кислоты       
                 items = new[] { "", "вскипание отсутствует ", "слабое вскипание", "среднее вскипание", "сильное вскипание"};
                 spinner = FindViewById<Spinner>(Resource.Id.horAcidSpinner);
                 spinner.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items);

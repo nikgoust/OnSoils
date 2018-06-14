@@ -16,6 +16,7 @@ namespace OnSoil
         private LinearLayout _mainLayout;
         private LinearLayout _textLayout;
         private ListItem _prev;
+        private long _lastButtonClickTime;
 
         public MyListAdapter(Activity activity, 
             List<Soil> data, 
@@ -27,8 +28,10 @@ namespace OnSoil
             _textView = textView;
             _textLayout = textLayout;
             _activity = activity;
+            _lastButtonClickTime = 0;
             _data = new ObservableCollection<ListItem>();
-            foreach (var soil in data ?? new List<Soil>()){
+            foreach (var soil in data ?? new List<Soil>())
+            {
                 _data.Add(new ListItem(){Soil = soil});
             }
         }
@@ -71,11 +74,17 @@ namespace OnSoil
             var readbnt = view.FindViewById<Button>(Resource.Id.ListItemRead);
             btnLayout.Visibility = _data[position].Visibility;
             editbtn.Click += (sender, e) =>{
+                if (Android.OS.SystemClock.ElapsedRealtime() - _lastButtonClickTime < 1000)
+                    return;
+                _lastButtonClickTime = Android.OS.SystemClock.ElapsedRealtime();
                 SoilsBuilder.Soil = GetSoil(position);
                 var intent = new Intent(_activity, typeof(FillingInfo));
                 _activity.StartActivity(intent);
             };
             delbnt.Click += (sender, e) => {
+                if (Android.OS.SystemClock.ElapsedRealtime() - _lastButtonClickTime < 1000)
+                    return;
+                _lastButtonClickTime = Android.OS.SystemClock.ElapsedRealtime();
                 var alertDialog = new AlertDialog.Builder(_activity);
                 alertDialog.SetTitle("Удаление");
                 alertDialog.SetMessage("Вы уверенны что хотите удалить данный профиль?");
@@ -83,12 +92,16 @@ namespace OnSoil
                     SoilsBuilder.Soil = GetSoil(position);
                     SoilsBuilder.DeleteSoil();
                     SoilsBuilder.SaveChanges(_activity);
+                    _data.RemoveAt(position);
                     NotifyDataSetChanged();
                 });
                 alertDialog.SetNegativeButton("Отмена", delegate {});
                 alertDialog.Show();
             };
             readbnt.Click += (sender, e) => {
+                if (Android.OS.SystemClock.ElapsedRealtime() - _lastButtonClickTime < 1000)
+                    return;
+                _lastButtonClickTime = Android.OS.SystemClock.ElapsedRealtime();
                 _textView.Text = SoilsBuilder.GetTextView(GetSoil(position));
                 _mainLayout.Visibility = ViewStates.Gone;
                 _textLayout.Visibility = ViewStates.Visible;

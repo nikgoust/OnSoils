@@ -63,9 +63,9 @@ namespace OnSoil
             _listOfSItems = _type == "Profiles" ? DataStorage.ProfilesList : DataStorage.HorizonsList;
             SetTheme(Android.Resource.Style.ThemeBlackNoTitleBarFullScreen);
             base.OnCreate(savedInstanceState);
-            SetContentView(OnSoil.Resource.Layout.SoilsInfo);
-            _listView = FindViewById<ListView>(OnSoil.Resource.Id.ListView);
-            _textView = FindViewById<TextView>(OnSoil.Resource.Id.TextView);
+            SetContentView(Resource.Layout.SoilsInfo);
+            _listView = FindViewById<ListView>(Resource.Id.ListView);
+            _textView = FindViewById<TextView>(Resource.Id.TextView);
             _textView.SetTypeface(Typeface.Serif, TypefaceStyle.Normal);
             _textView.MovementMethod = new LinkMovementMethod();
             

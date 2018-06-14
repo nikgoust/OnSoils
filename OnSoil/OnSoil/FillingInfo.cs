@@ -63,10 +63,14 @@ namespace OnSoil
                     return;
                 }
                 UpdateSoil();
-                SoilsBuilder.AddSoil();
-                SoilsBuilder.SaveChanges(this);
-                Toast.MakeText(this, "Успешно добавленно", ToastLength.Short).Show();
-                _exist = true;
+                if (SoilsBuilder.AddSoil())
+                {
+                    SoilsBuilder.SaveChanges(this);
+                    Toast.MakeText(this, "Успешно добавленно", ToastLength.Short).Show();
+                    _exist = true;
+                    return;
+                }
+                Toast.MakeText(this, "Такой профиль уже существует", ToastLength.Short).Show();
             };
 
             delProileButton.Click += (sender, e) =>{
