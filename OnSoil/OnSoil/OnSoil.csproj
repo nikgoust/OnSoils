@@ -10,14 +10,21 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OnSoil</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AssemblyName>OnSoil</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\Nikit\AppData\Local\Xamarin\Mono for Android\Keystore\nikgoust - 2\nikgoust.keystore</AndroidSigningKeyStore>
+    <AndroidSigningKeyAlias>nikgoust</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>199574504</AndroidSigningKeyPass>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -28,8 +35,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
-    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkMode>Full</AndroidLinkMode>
     <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidSupportedAbis />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>PdbOnly</DebugType>
@@ -39,9 +50,13 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -53,29 +68,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Code\Garden.cs" />
-    <Compile Include="Code\resources\MultiSpinner.cs" />
-    <Compile Include="Code\resources\MyListAdapter.cs" />
-    <Compile Include="Code\resources\SoilsBuilder.cs" />
-    <Compile Include="Code\diary\Diary.cs" />
-    <Compile Include="Code\resources\DataStorage.cs" />
-    <Compile Include="Code\catalog\Directory.cs" />
-    <Compile Include="Code\game\FillGame.cs" />
-    <Compile Include="Code\game\FillGameEnd.cs" />
-    <Compile Include="Code\diary\FillingHoriz.cs" />
-    <Compile Include="Code\diary\FillingInfo.cs" />
-    <Compile Include="Code\game\GameList.cs" />
-    <Compile Include="Code\MainActivity.cs" />
+    <Compile Include="Garden.cs" />
+    <Compile Include="MyListAdapter.cs" />
+    <Compile Include="SoilsBuilder.cs" />
+    <Compile Include="Diary.cs" />
+    <Compile Include="DataStorage.cs" />
+    <Compile Include="Directory.cs" />
+    <Compile Include="FillGame.cs" />
+    <Compile Include="FillGameEnd.cs" />
+    <Compile Include="FillingHoriz.cs" />
+    <Compile Include="FillingInfo.cs" />
+    <Compile Include="GameList.cs" />
+    <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Code\game\GameSoil.cs" />
-    <Compile Include="Code\resources\Soil.cs" />
-    <Compile Include="Code\diary\SoilsInfo.cs" />
+    <Compile Include="GameSoil.cs" />
+    <Compile Include="Soil.cs" />
+    <Compile Include="SoilsInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\agroSoils.csv" />
     <AndroidAsset Include="Assets\soils.csv" />
-    <None Include="ClassDiagram2.cd" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
@@ -120,7 +133,9 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\TopSoil.png" />
@@ -157,6 +172,7 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\Garden.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
@@ -164,5 +180,7 @@
 		</Target>
 		<Target Name="AfterBuild">
 		</Target>
+		
+<AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
  -->
 </Project>

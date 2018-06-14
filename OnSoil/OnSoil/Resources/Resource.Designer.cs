@@ -613,10 +613,10 @@ namespace OnSoil
 		{
 			
 			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
+			public const int action_settings = 2131034113;
 			
 			// aapt resource value: 0x7f050000
-			public const int Hello = 2131034112;
+			public const int app_name = 2131034112;
 			
 			static String()
 			{

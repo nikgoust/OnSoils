@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:background="#7a5230">
+    android:background="#7a5230"
+    android:paddingLeft="10dp">
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"

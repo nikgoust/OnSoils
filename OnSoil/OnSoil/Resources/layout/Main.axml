@@ -70,7 +70,8 @@
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:id="@+id/myGarden"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:autoLink="none" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"

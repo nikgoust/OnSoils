@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="OnSoil.OnSoil" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="OnSoil.OnSoil" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="OnSoil" android:name="android.app.Application" android:allowBackup="true">
-    <activity android:label="FillGame" android:name="md5a64d4c03532b7b352002f09de9faa898.FillGame" />
-    <activity android:label="FillGameEnd" android:name="md5a64d4c03532b7b352002f09de9faa898.FillGameEnd" />
-    <activity android:label="GameList" android:name="md5a64d4c03532b7b352002f09de9faa898.GameList" />
-    <activity android:icon="@drawable/icon" android:label="OnSoil" android:name="md5a64d4c03532b7b352002f09de9faa898.MainActivity">
+    <activity android:label="Garden" android:name="md507b3def0783b87f72372483d0e359963.Garden" />
+    <activity android:label="Diary" android:name="md507b3def0783b87f72372483d0e359963.Diary" />
+    <activity android:label="Directory" android:screenOrientation="portrait" android:name="md507b3def0783b87f72372483d0e359963.Directory" />
+    <activity android:label="FillGame" android:screenOrientation="portrait" android:name="md507b3def0783b87f72372483d0e359963.FillGame" />
+    <activity android:label="FillGameEnd" android:screenOrientation="portrait" android:name="md507b3def0783b87f72372483d0e359963.FillGameEnd" />
+    <activity android:label="FillingHoriz" android:name="md507b3def0783b87f72372483d0e359963.FillingHoriz" />
+    <activity android:label="FillingInfo" android:name="md507b3def0783b87f72372483d0e359963.FillingInfo" />
+    <activity android:label="GameList" android:screenOrientation="portrait" android:name="md507b3def0783b87f72372483d0e359963.GameList" />
+    <activity android:icon="@drawable/icon" android:label="OnSoil" android:screenOrientation="portrait" android:name="md507b3def0783b87f72372483d0e359963.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="SoilsInfo" android:screenOrientation="portrait" android:name="md507b3def0783b87f72372483d0e359963.SoilsInfo" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="OnSoil.OnSoil.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
 </manifest>
